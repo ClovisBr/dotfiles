@@ -24,3 +24,6 @@ compinit
 # Rewriting the PROMPT command of zap-prompt to remove the ⚡
 PROMPT="%B%{ %}% %(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )%{$fg[cyan]%}%c%{$reset_color%}"
 PROMPT+="\$vcs_info_msg_0_ "
+
+# To add asdf in the shell
+. /opt/asdf-vm/asdf.sh
