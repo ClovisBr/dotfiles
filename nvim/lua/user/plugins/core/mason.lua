@@ -34,6 +34,7 @@ return {
 				"pyright",
 				"html",
 				"cssls",
+				"dockerls",
 			},
 			automatic_installation = true,
 		})
