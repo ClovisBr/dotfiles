@@ -15,6 +15,7 @@ vim.keymap.set("n", "<C-f>", ":exe 'normal' ((line('.') * 10) / line('$')) * 10 
 vim.keymap.set("n", "<C-b>", ":exe 'normal' (line('$') / 100) * 11 . 'k'<CR>zz", { silent = true })
 vim.keymap.set("n", "n", "nzzzv", { silent = true })
 vim.keymap.set("n", "N", "Nzzzv", { silent = true })
+vim.keymap.set({ "i", "n" }, "<C-c>", "<Esc>", { silent = true })
 
 vim.keymap.set("n", "k", "gk", { silent = true })
 vim.keymap.set("n", "j", "gj", { silent = true })
@@ -26,10 +27,8 @@ vim.keymap.set("i", "<Right>", "<Esc>ll", { silent = true })
 vim.keymap.set("i", "<Left>", "<Esc>", { silent = true })
 
 vim.keymap.set("x", "<leader>p", '"_dP')
+vim.keymap.set("n", "<leader>p", ":put = expand('%:p')<CR>")
 vim.keymap.set({ "n", "v" }, "<leader>d", '"_d')
-
-vim.keymap.set({ "i", "n" }, "<C-c>", "<Esc>", { silent = true })
-
 vim.keymap.set("n", "<leader>x", ":q<CR>", { silent = true })
 vim.keymap.set("n", '<leader>"', ":split<CR><C-w>j", { silent = true })
 vim.keymap.set("n", "<leader>%", ":vsplit<CR><C-w>l", { silent = true })
