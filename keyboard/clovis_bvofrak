@@ -116,8 +116,8 @@ xkb_symbols "basic" {
     key <AC05>	{ [         m,          M,            4,            9 ]	};
     key <AC06>	{ [    period,      colon,        comma,    semicolon ]	};
     key <AC07>	{ [         u,          U,       ugrave,       Ugrave ]	};
-    key <AC08>	{ [         e,          E,       egrave,       Egrave ]	};
-    key <AC09>	{ [         i,          I,       eacute,       Eacute ]	};
+    key <AC08>	{ [         e,          E,       eacute,       Eacute ]	};
+    key <AC09>	{ [         i,          I,       egrave,       Egrave ]	};
     key <AC10>	{ [         a,          A,       agrave,       Agrave ]	};
 
     key <AB01>	{ [         q,          Q,         less,      greater ]	};
