@@ -1,0 +1,12 @@
+[Unit]
+Description=Update system with pacman
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/c/.config/scripts/pacman-update.sh
+
+[Install]
+WantedBy=multi-user.target
+

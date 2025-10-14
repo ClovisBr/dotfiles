@@ -1,0 +1,13 @@
+[Unit]
+Description= Create Timeshift Snapshot at Boot
+DefaultDependencies=no
+Before=basic.target
+Requires=local-fs.target
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/timeshift --create --scripted
+
+[Install]
+WantedBy=multi-user.target
