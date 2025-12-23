@@ -23,6 +23,8 @@ return {
         "isort",
         "mypy",
         "pylint",
+        "golangci-lint",
+        "goimports",
       },
     })
     require("mason-lspconfig").setup({
@@ -33,6 +35,7 @@ return {
         "html",
         "cssls",
         "dockerls",
+        "gopls",
       },
       automatic_installation = true,
     })
@@ -40,6 +43,7 @@ return {
       ensure_installed = {
         "debugpy",
         "codelldb",
+        "delve",
       },
       handlers = {},
       automatic_installation = true,
